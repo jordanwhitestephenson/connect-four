@@ -229,10 +229,10 @@ export class GameBoard extends Component {
 					{!chosenPlayer ? <h2>Choose Player</h2> :  !this.state.isConnect4  ? <h2>Game on....</h2>  : null}
 					<div className="flex_box_default">
 						<div className="playerOne" className={chosenPlayer === 'player1' ? "selected" : "not_selected"} onClick={(e) => this.choosePlayer("player1")}>
-							<img src={Player1} alt="player1" />
+							<img src={Player1} alt="player1" className="img-responsive" />
 						</div>
 						<div className="playerTwo" className={chosenPlayer === 'player2' ? "selected" : "not_selected"} onClick={(e) => this.choosePlayer("player2")}>
-							<img src={Player2} alt="player2" />
+							<img src={Player2} alt="player2" className = "img-responsive"/>
 						</div>
 					</div>
 					{chosenPlayer ? <p class="">Chosen Player: {chosenPlayer}</p> : null}
